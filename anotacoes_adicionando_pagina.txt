@@ -1,0 +1,35 @@
+se colocar ! e der enter ja cria uma estrutura basica de html.
+
+
+COLOCANDO NOVAS PAGINAS:
+
+Para adicionar uma página com o servidor django deve-se fazer os seguintes passos:
+
+1- na pasta templates/myapp ir no arquivo urls.py e adicionar o path em urlpatterns
+
+path('referencia no html', views.função em views, name='referencia no html'
+
+2- após isso entrar em views.py que fica em templates/myapp também
+
+def função em views(request):
+    return render(request, 'pasta/arquivo.html')
+
+A função é responsável por processar a solicitação HTTP para a página de "arquivo.html" e retornar a página HTML correspondente.
+
+3- A última coisa é no html da pagina principal onde irá direcionar para a nova pagina
+
+la onde está o botão exemplo: <a href="{% url 'forgot_password' %}" >Esqueci minha senha</a>
+
+possui o código de referencia forgot_password e isso deve ser colocado la no primeiro passo em path 'referencia no html'
+
+OBS: a pagina principal não possui referencia no html e em urlpattern fica como '' em branco, logo para se comunicar com a pagina principal basta usar o código em name='' do passo 1, exemplo:
+
+path('', views.page_login, name='login'),
+
+no html da nova pagina se colocaria:
+<a href="{% url 'login' %}">Voltar ao login</a>
+
+
+
+
+

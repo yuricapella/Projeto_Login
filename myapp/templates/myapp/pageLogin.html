@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/style_pageLogin.css' %}">
+
+</head>
+<body>
+  <div class="page_login">
+    <form method="get" class="formLogin">
+      <h1 class="titleLogin">Login</h1>
+      <p class="paragrafoLogin">Digite os dados abaixo:</p>
+      <label for="username">usuário</label>
+      <input type="username" placeholder="Digite seu usuário" autofocus="true" />
+      <label for="password" placeholder="Digite sua senha">senha</label>
+      <input type="password" placeholder="Digite sua senha"/>
+      <div class="criação_ou_recuperação">
+        <a href="{% url 'forgot_password' %}" >Esqueci minha senha</a>
+        <p> Ou </p>
+        <a href="{% url 'create_account' %}" >Crie sua conta</a>
+      </div>
+      <input type="submit" value="Enter" class="btn" />
+    </form>
+  </div>
+
+
+  </div>
+</body>
+</html>

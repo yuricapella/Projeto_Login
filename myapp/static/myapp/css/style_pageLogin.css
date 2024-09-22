@@ -1,0 +1,47 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(24, 163, 163); /* Definindo um background para o body */
+}
+
+.page_login{
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  position: relative;
+  gap: 5px;
+  width: 20%;
+  height: 50vh;
+  letter-spacing: 1px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.formLogin{
+  align-content: center;
+  align-items: left;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  letter-spacing: 1px;
+  gap: 5px;
+}
+
+.titleLogin{
+  position: relative;
+  ;
+}
+
+
+
+
+
+
