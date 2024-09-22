@@ -1,0 +1,4 @@
+python manage.py runserver
+Para ligar o servidor e utilizar o ip para ver o site
+
+Para desligar o servidor, basta apertar CTRL+C no terminal
